@@ -1,7 +1,17 @@
 @import '../styles/variables';
 
 .navbar {
-    display: block;
+    display: flex;
+    align-items: center;
+
     height: 9rem;
     background-color: $c-black;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 87%;
+        margin: auto;
+    }
 }
