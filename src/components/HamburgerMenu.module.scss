@@ -1,0 +1,59 @@
+@import '../styles/variables';
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+
+    padding: 8.4rem 2.4rem 3.2rem;
+
+    &__item {
+        height: 16.5rem;
+        background-color: $c-grey;
+        border-radius: 0.8rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 6.8rem;
+        }
+
+        .thumbnail {
+            margin-top: -4rem;
+            width: 13rem;
+            height: auto;
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 2.2rem;
+
+            h6 {
+                margin-top: -2rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                opacity: 50%;
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 6rem;
+                margin: auto;
+
+                img {
+                    height: 1rem;
+                }
+            }
+        }
+    }
+}
