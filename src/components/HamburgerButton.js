@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './HamburgerButton.module.scss';
 
-const HamburgerButton = () => {
+const HamburgerButton = (props) => {
     return (
-        <div className={classes["hamburger-btn"]}>
+        <div className={classes["hamburger-btn"]} onClick={() => props.setOpenMenu(!props.openMenu)}>
             <span></span>
             <span></span>
             <span></span>
