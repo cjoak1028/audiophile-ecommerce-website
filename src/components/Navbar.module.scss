@@ -1,4 +1,5 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .navbar {
     display: flex;
@@ -13,5 +14,22 @@
         align-items: center;
         width: 87%;
         margin: auto;
+
+        .logo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include respond-above("tablet") {
+            .logo-container {
+                justify-content: left;
+            }
+
+            .logo {
+                margin-left: 4rem;
+            }
+        }
     }
 }

@@ -20,8 +20,10 @@ const Navbar = () => {
             <div className={classes.navbar}>
                 <div className={classes["navbar__content"]}>
                     <HamburgerButton toggleMenu={toggleMenu} />
-                    <img src={logo} alt="audiophile logo" />
-                    <img src={cart} alt="shopping cart" />
+                    <div className={classes["logo-container"]}>
+                        <img className={classes.logo} src={logo} alt="audiophile logo" />
+                    </div>
+                    <img className={classes.cart} src={cart} alt="shopping cart" />
                 </div>
             </div>
             {openMenu ? <HamburgerMenu /> : ''}
