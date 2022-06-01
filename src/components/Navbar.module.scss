@@ -8,6 +8,8 @@
     height: 9rem;
     background-color: $c-black;
 
+    position: relative;
+
     &__content {
         display: flex;
         justify-content: space-between;
@@ -30,6 +32,36 @@
             .logo {
                 margin-left: 4rem;
             }
+        }
+
+        @include respond-above("desktop") {
+            .logo {
+                margin-left: 0;
+            }
+
+            .logo-container {
+                width: auto;
+            }
+        }
+    }
+
+    &__links {
+        display: none;
+        text-transform: uppercase;
+        color: $c-white;
+        font-size: 1.3rem;
+        position: absolute;
+        width: 43rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        a {
+            cursor: pointer;
+        }
+
+        @include respond-above("desktop") {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

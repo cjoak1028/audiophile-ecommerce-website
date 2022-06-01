@@ -14,6 +14,10 @@
         padding: 10.9rem 4rem 6.7rem;
     }
 
+    @include respond-above("desktop") {
+        display: none;
+    }
+
     &__item {
         height: 16.5rem;
         background-color: $c-grey;

@@ -1,4 +1,5 @@
 @import '../styles/variables';
+@import '../styles/mixins';
 
 .hamburger-btn {
     display: inline-flex;
@@ -8,6 +9,10 @@
 
     width: 1.6rem;
     height: 1.5rem;
+
+    @include respond-above("desktop") {
+        display: none;
+    }
 
     span {
         display: block;

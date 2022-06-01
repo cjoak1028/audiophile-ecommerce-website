@@ -23,6 +23,12 @@ const Navbar = () => {
                     <div className={classes["logo-container"]}>
                         <img className={classes.logo} src={logo} alt="audiophile logo" />
                     </div>
+                    <div className={classes["navbar__links"]}>
+                        <a>Home</a>
+                        <a>Headphones</a>
+                        <a>Speakers</a>
+                        <a>Earphones</a>
+                    </div>
                     <img className={classes.cart} src={cart} alt="shopping cart" />
                 </div>
             </div>
