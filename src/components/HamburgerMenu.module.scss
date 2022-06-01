@@ -1,10 +1,22 @@
 @import '../styles/variables';
+@import '../styles/mixins';
+
+$breakpoints: (
+    "tablet": 37.5em
+);
 
 .hamburger-menu {
     display: flex;
     flex-direction: column;
 
     padding: 8.4rem 2.4rem 3.2rem;
+
+    @include respond-above("tablet") {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 10.9rem 4rem 6.7rem;
+    }
 
     &__item {
         height: 16.5rem;
@@ -18,6 +30,14 @@
 
         &:not(:last-child) {
             margin-bottom: 6.8rem;
+
+            @include respond-above("tablet") {
+                margin-bottom: 0rem;
+            }
+        }
+
+        @include respond-above("tablet") {
+            width: 32%;
         }
 
         .thumbnail {
