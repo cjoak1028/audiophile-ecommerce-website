@@ -2,7 +2,7 @@
 @import '../styles/mixins';
 
 $breakpoints: (
-    "tablet": 37.5em
+    "hm-tablet": 37.5em
 );
 
 .hamburger-menu {
@@ -11,7 +11,7 @@ $breakpoints: (
 
     padding: 8.4rem 2.4rem 3.2rem;
 
-    @include respond-above("tablet") {
+    @include respond-above("hm-tablet") {
         flex-direction: row;
         justify-content: space-between;
 
@@ -31,12 +31,12 @@ $breakpoints: (
         &:not(:last-child) {
             margin-bottom: 6.8rem;
 
-            @include respond-above("tablet") {
+            @include respond-above("hm-tablet") {
                 margin-bottom: 0rem;
             }
         }
 
-        @include respond-above("tablet") {
+        @include respond-above("hm-tablet") {
             width: 32%;
         }
 
