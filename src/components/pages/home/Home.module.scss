@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+
+.home {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.banner {
+    color: white;
+    background: $c-black url('../../../assets/home/mobile/image-header.jpg') no-repeat center/cover;
+    text-align: center;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+
+    // height: 60rem;
+
+    padding: 40% 10%; // this needs to be responsive
+
+    &__content {
+        margin-top: 9rem; //navbar height
+
+        h6 {
+            text-transform: uppercase;
+            opacity: 50%;
+            font-weight: 400;
+            letter-spacing: 1rem;
+            margin-bottom: 1.6rem;
+        }
+
+        h1 {
+            margin-bottom: 2.4rem;
+        }
+
+        p {
+            opacity: 75%;
+        }
+    }
+}

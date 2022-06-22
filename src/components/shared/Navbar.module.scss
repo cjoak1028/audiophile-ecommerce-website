@@ -9,6 +9,7 @@
     background-color: $c-black;
 
     position: relative;
+    z-index: 10;
 
     &__content {
         display: flex;
@@ -16,6 +17,9 @@
         align-items: center;
         width: 87%;
         margin: auto;
+
+        height: 100%;
+        border-bottom: 1px solid rgba($c-white, 10.4%);
 
         .logo-container {
             width: 100%;
