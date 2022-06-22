@@ -63,7 +63,7 @@
             cursor: pointer;
         }
 
-        @include respond-above("desktop") {
+        @include respond-above("tablet") {
             display: flex;
             justify-content: space-between;
         }
