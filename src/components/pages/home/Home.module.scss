@@ -1,4 +1,5 @@
 @import '../../../styles/variables';
+@import '../../../styles/mixins';
 
 .home {
     position: absolute;
@@ -9,7 +10,7 @@
 
 .banner {
     color: white;
-    background: $c-black url('../../../assets/home/mobile/image-header.jpg') no-repeat center/cover;
+    background: #191919 url('../../../assets/home/mobile/image-header.jpg') no-repeat center/contain;
     text-align: center;
     z-index: 0;
 
@@ -18,8 +19,28 @@
 
     padding: 30% 10%; // this needs to be responsive
 
+    @include respond-above('mobile') {
+        background-image: url('../../../assets/home/tablet/image-header.jpg');
+        padding: 20% 30%;
+    }
+
+    @include respond-above('tablet') {
+        background-image: url('../../../assets/home/desktop/image-hero.jpg');
+        padding: 10% 0;
+
+        text-align: left;
+        justify-content: left;
+    }
+
     &__content {
         margin-top: 9rem; //navbar height
+
+        @include respond-above('tablet') {
+            min-width: 40rem;
+            width: 25%;
+            max-width: 50rem;
+            margin-left: 10%;
+        }
 
         h6 {
             text-transform: uppercase;
@@ -35,7 +56,17 @@
 
         p {
             opacity: 75%;
+            margin: auto;
             margin-bottom: 2.8rem;
+            max-width: 28rem;
+
+            @include respond-above('mobile') {
+                max-width: 40rem;
+            }
+
+            @include respond-above('tablet') {
+                margin-left: 0;
+            }
         }
     }
 }

@@ -15,8 +15,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 87%;
-        margin: auto;
+        width: 100%;
+        margin: 10%;
 
         height: 100%;
         border-bottom: 1px solid rgba($c-white, 10.4%);
@@ -28,7 +28,7 @@
             align-items: center;
         }
 
-        @include respond-above("tablet") {
+        @include respond-above("mobile") {
             .logo-container {
                 justify-content: left;
             }
@@ -38,7 +38,7 @@
             }
         }
 
-        @include respond-above("desktop") {
+        @include respond-above("tablet") {
             .logo {
                 margin-left: 0;
             }
