@@ -5,8 +5,8 @@ import classes from './Navbar.module.scss';
 import HamburgerButton from './HamburgerButton';
 import HamburgerMenu from './HamburgerMenu';
 
-import logo from '../assets/shared/desktop/logo.svg';
-import cart from '../assets/shared/desktop/icon-cart.svg';
+import logo from '../../assets/shared/desktop/logo.svg';
+import cart from '../../assets/shared/desktop/icon-cart.svg';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);

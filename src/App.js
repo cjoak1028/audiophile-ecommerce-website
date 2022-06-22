@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import Navbar from './components/shared/Navbar';
+import Home from './components/pages/home/Home';
 
 
 const App = () => {
