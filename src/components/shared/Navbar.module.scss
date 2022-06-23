@@ -61,6 +61,11 @@
 
         a {
             cursor: pointer;
+
+            &:hover {
+                color: $c-orange;
+                transition: color .2s ease;
+            }
         }
 
         @include respond-above("BP-3") {
