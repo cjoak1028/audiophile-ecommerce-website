@@ -10,7 +10,7 @@
     width: 1.6rem;
     height: 1.5rem;
 
-    @include respond-above("tablet") {
+    @include respond-above("BP-3") {
         display: none;
     }
 

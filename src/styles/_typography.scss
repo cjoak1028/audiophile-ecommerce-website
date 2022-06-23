@@ -31,7 +31,7 @@ h1 {
     line-height: 4rem;
     letter-spacing: 1.29px;
 
-    @include respond-above('mobile') {
+    @include respond-above('BP-2') {
         font-size: 5.6rem;
         line-height: 5.8rem;
         letter-spacing: 2px;

@@ -1,8 +1,9 @@
 //BREAKPOINT MANAGER 
 
 $breakpoints: (
-    "mobile": 37.5em,
-    "tablet": 70em) !default;
+    "BP-1": 30em,
+    "BP-2": 37.5em,
+    "BP-3": 70em) !default;
 
 @mixin respond-above($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {

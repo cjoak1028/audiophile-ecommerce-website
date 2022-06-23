@@ -28,7 +28,7 @@
             align-items: center;
         }
 
-        @include respond-above("mobile") {
+        @include respond-above("BP-2") {
             .logo-container {
                 justify-content: left;
             }
@@ -38,7 +38,7 @@
             }
         }
 
-        @include respond-above("tablet") {
+        @include respond-above("BP-3") {
             .logo {
                 margin-left: 0;
             }
@@ -63,7 +63,7 @@
             cursor: pointer;
         }
 
-        @include respond-above("tablet") {
+        @include respond-above("BP-3") {
             display: flex;
             justify-content: space-between;
         }

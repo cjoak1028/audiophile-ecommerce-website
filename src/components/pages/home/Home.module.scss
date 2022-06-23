@@ -17,14 +17,14 @@
     display: flex;
     justify-content: center;
 
-    padding: 30% 10%; // this needs to be responsive
+    padding: 40% 10%; // this needs to be responsive
 
-    @include respond-above('mobile') {
+    @include respond-above('BP-1') {
         background-image: url('../../../assets/home/tablet/image-header.jpg');
-        padding: 20% 30%;
+        padding: 15% 30%;
     }
 
-    @include respond-above('tablet') {
+    @include respond-above('BP-3') {
         background-image: url('../../../assets/home/desktop/image-hero.jpg');
         padding: 10% 0;
 
@@ -35,7 +35,7 @@
     &__content {
         margin-top: 9rem; //navbar height
 
-        @include respond-above('tablet') {
+        @include respond-above('BP-3') {
             min-width: 40rem;
             width: 25%;
             max-width: 50rem;
@@ -60,11 +60,11 @@
             margin-bottom: 2.8rem;
             max-width: 28rem;
 
-            @include respond-above('mobile') {
+            @include respond-above('BP-2') {
                 max-width: 40rem;
             }
 
-            @include respond-above('tablet') {
+            @include respond-above('BP-3') {
                 margin-left: 0;
             }
         }
