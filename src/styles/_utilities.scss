@@ -2,3 +2,11 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.content-wrapper {
+    padding-top: 9.2rem;
+
+    &>* {
+        margin-bottom: 12rem;
+    }
+}

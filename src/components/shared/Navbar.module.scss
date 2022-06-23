@@ -75,6 +75,12 @@
 }
 
 .hamburger-menu {
+    &>* {
+        padding: 0 10%;
+        padding-top: 8.4rem;
+        padding-bottom: 3.5rem;
+    }
+
     @include respond-above('BP-3') {
         display: none;
     }

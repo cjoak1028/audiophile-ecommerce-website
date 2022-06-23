@@ -14,8 +14,14 @@ const Home = () => {
                     <a className={'btn btn--orange'}>See Product</a>
                 </div>
             </div>
-            <div className={`padding-x ${classes["home__content"]}`}>
+            <div className={`content-wrapper padding-x ${classes["home__content"]}`}>
                 <ProductLinks />
+                <div className={classes['featured-products']}>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
             </div>
         </div>
     )

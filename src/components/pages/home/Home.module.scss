@@ -6,14 +6,6 @@
     top: 0;
     z-index: 0;
     width: 100%;
-
-    &__content {
-        padding-top: 9.2rem;
-
-        &>* {
-            margin-bottom: 12rem;
-        }
-    }
 }
 
 .banner {
@@ -77,4 +69,9 @@
             }
         }
     }
+}
+
+.featured-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
