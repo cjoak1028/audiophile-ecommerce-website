@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import classes from './Navbar.module.scss';
 
 import HamburgerButton from './HamburgerButton';
-import HamburgerMenu from './HamburgerMenu';
+import ProductLinks from './ProductLinks';
 
 import logo from '../../assets/shared/desktop/logo.svg';
 import cart from '../../assets/shared/desktop/icon-cart.svg';
@@ -32,7 +32,9 @@ const Navbar = () => {
                     <img className={classes.cart} src={cart} alt="shopping cart" />
                 </div>
             </div>
-            {openMenu ? <HamburgerMenu /> : ''}
+            <div className={classes["hamburger-menu"]}>
+                {openMenu ? <ProductLinks /> : ''}
+            </div>
         </React.Fragment>
     );
 }

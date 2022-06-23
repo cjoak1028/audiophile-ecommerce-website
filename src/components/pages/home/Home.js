@@ -1,4 +1,6 @@
 import React from 'react';
+
+import ProductLinks from '../../shared/ProductLinks';
 import classes from './Home.module.scss';
 
 const Home = () => {
@@ -12,6 +14,7 @@ const Home = () => {
                     <a className={'btn btn--orange'}>See Product</a>
                 </div>
             </div>
+            <ProductLinks />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
-.hamburger-menu {
+.product-links {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -16,10 +16,6 @@
         justify-content: space-between;
 
         padding: 10.9rem 4rem 6.7rem;
-    }
-
-    @include respond-above("BP-3") {
-        display: none;
     }
 
     &__item {
