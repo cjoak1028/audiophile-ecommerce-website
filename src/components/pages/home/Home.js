@@ -14,7 +14,9 @@ const Home = () => {
                     <a className={'btn btn--orange'}>See Product</a>
                 </div>
             </div>
-            <ProductLinks />
+            <div className={`padding-x ${classes["home__content"]}`}>
+                <ProductLinks />
+            </div>
         </div>
     )
 }

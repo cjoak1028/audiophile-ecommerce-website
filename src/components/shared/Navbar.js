@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <React.Fragment>
             <div className={classes.navbar}>
-                <div className={classes["navbar__content"]}>
+                <div className={`padding-x ${classes["navbar__content"]}`}>
                     <HamburgerButton toggleMenu={toggleMenu} />
                     <div className={classes["logo-container"]}>
                         <img className={classes.logo} src={logo} alt="audiophile logo" />
