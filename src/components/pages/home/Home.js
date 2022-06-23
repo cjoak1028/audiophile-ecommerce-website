@@ -17,10 +17,10 @@ const Home = () => {
             <div className={`content-wrapper padding-x ${classes["home__content"]}`}>
                 <ProductLinks />
                 <div className={classes['featured-products']}>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                    <div className={classes['product-1']}>1</div>
+                    <div className={classes['product-2']}>2</div>
+                    <div className={classes['product-3']}>3</div>
+                    <div className={classes['product-4']}>4</div>
                 </div>
             </div>
         </div>
