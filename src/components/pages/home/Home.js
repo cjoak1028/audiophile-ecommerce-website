@@ -20,12 +20,17 @@ const Home = () => {
                 <ProductLinks />
                 <div className={classes['home-gallery']}>
                     <div className={classes['home-gallery__cell-1']}>
-                        {/* <img src={speakerZx9Img}></img>
-                        <h1>ZX9 Speaker</h1>
-                        <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                        <a className={'btn btn--black'}>See Product</a> */}
+                        <div>
+                            <img src={speakerZx9Img}></img>
+                            <h1>ZX9 Speaker</h1>
+                            <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                            <a className={'btn btn--black'}>See Product</a>
+                        </div>
                     </div>
-                    <div className={classes['home-gallery__cell-2']}>2</div>
+                    <div className={classes['home-gallery__cell-2']}>
+                        <h4>ZX7 Speaker</h4>
+                        <a className={'btn btn--transparent'}>See Product</a>
+                    </div>
                     <div className={classes['home-gallery__cell-3']}>3</div>
                     <div className={classes['home-gallery__cell-4']}>4</div>
                 </div>

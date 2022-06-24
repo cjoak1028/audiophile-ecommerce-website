@@ -17,4 +17,11 @@
         color: $c-white;
         background-color: $c-black;
     }
+
+    &--transparent {
+        color: $c-black;
+        background-color: transparent;
+        border: 1px solid $c-black;
+        padding: calc(1.2rem - 1px) calc(3rem - 1px);
+    }
 }

@@ -25,7 +25,7 @@
         justify-content: space-between;
 
         &:not(:last-child) {
-            margin-bottom: 6.8rem;
+            margin-bottom: 6rem;
 
             @include respond-above("BP-2") {
                 margin-bottom: 0rem;
