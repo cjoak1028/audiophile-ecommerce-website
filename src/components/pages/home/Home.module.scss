@@ -71,7 +71,35 @@
     }
 }
 
-.featured-products {
+.home-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    &__cell-1 {
+        background: $c-orange url('../../../assets/home/desktop/pattern-circles.svg') no-repeat center bottom 13rem/cover;
+        // padding: 0 7%;
+        height: 60rem;
+        grid-column: 1 / span 2;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+
+        img {
+            width: 17.2rem;
+            height: 20.7rem;
+            margin-top: 5rem;
+        }
+
+        h1 {
+            margin-top: 3.2rem;
+        }
+
+        p {
+            margin-top: 2.4rem;
+        }
+
+        a {
+            margin-top: 2.4rem;
+        }
+    }
 }

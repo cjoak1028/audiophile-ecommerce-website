@@ -12,4 +12,9 @@
     &--orange {
         background-color: $c-orange;
     }
+
+    &--black {
+        color: $c-white;
+        background-color: $c-black;
+    }
 }

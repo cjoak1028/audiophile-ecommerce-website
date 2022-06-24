@@ -3,6 +3,8 @@ import React from 'react';
 import ProductLinks from '../../shared/ProductLinks';
 import classes from './Home.module.scss';
 
+import speakerZx9Img from '../../../assets/home/mobile/image-speaker-zx9.png';
+
 const Home = () => {
     return (
         <div className={classes.home}>
@@ -16,14 +18,19 @@ const Home = () => {
             </div>
             <div className={`content-wrapper padding-x ${classes["home__content"]}`}>
                 <ProductLinks />
-                <div className={classes['featured-products']}>
-                    <div className={classes['product-1']}>1</div>
-                    <div className={classes['product-2']}>2</div>
-                    <div className={classes['product-3']}>3</div>
-                    <div className={classes['product-4']}>4</div>
+                <div className={classes['home-gallery']}>
+                    <div className={classes['home-gallery__cell-1']}>
+                        {/* <img src={speakerZx9Img}></img>
+                        <h1>ZX9 Speaker</h1>
+                        <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                        <a className={'btn btn--black'}>See Product</a> */}
+                    </div>
+                    <div className={classes['home-gallery__cell-2']}>2</div>
+                    <div className={classes['home-gallery__cell-3']}>3</div>
+                    <div className={classes['home-gallery__cell-4']}>4</div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
