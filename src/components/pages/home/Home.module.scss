@@ -85,6 +85,7 @@
         border-radius: 8px;
         text-align: center;
         color: white;
+        min-height: 60rem;
 
         img {
             width: 17.2rem;
@@ -113,6 +114,7 @@
         border-radius: 8px;
         background: url('../../../assets/home/mobile/image-speaker-zx7.jpg') no-repeat center/cover;
         padding: 30% 7%;
+        // min-height: 32rem;
 
         h4 {
             margin-bottom: 3.2rem;

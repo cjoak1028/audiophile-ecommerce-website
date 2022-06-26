@@ -20,8 +20,8 @@ const Navbar = () => {
             <div className={classes.navbar}>
                 <div className={`padding-x ${classes["navbar__content"]}`}>
                     <HamburgerButton toggleMenu={toggleMenu} />
-                    <div className={classes["logo-container"]}>
-                        <img className={classes.logo} src={logo} alt="audiophile logo" />
+                    <div className={classes["navbar__logo"]}>
+                        <img className={classes['navbar__logo-img']} src={logo} alt="audiophile logo" />
                     </div>
                     <div className={classes["navbar__links"]}>
                         <a>Home</a>

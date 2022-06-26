@@ -19,32 +19,30 @@
 
         height: 100%;
         border-bottom: 1px solid rgba($c-white, 10.4%);
+    }
 
-        .logo-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @include respond-above("BP-2") {
-            .logo-container {
-                justify-content: left;
-            }
-
-            .logo {
-                margin-left: 4rem;
-            }
+            justify-content: left;
         }
 
         @include respond-above("BP-3") {
-            .logo {
-                margin-left: 0;
-            }
+            width: auto;
+        }
+    }
 
-            .logo-container {
-                width: auto;
-            }
+    &__logo-img {
+        @include respond-above("BP-2") {
+            margin-left: 4rem;
+        }
+
+        @include respond-above("BP-3") {
+            margin-left: 0;
         }
     }
 
