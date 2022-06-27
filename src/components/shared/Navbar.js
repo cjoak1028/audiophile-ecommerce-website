@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import classes from './Navbar.module.scss';
 
-import HamburgerButton from './HamburgerButton';
 import ProductLinks from './ProductLinks';
 
 import logo from '../../assets/shared/desktop/logo.svg';
@@ -19,7 +18,11 @@ const Navbar = () => {
         <React.Fragment>
             <div className={classes.navbar}>
                 <div className={`padding-x ${classes["navbar__content"]}`}>
-                    <HamburgerButton toggleMenu={toggleMenu} />
+                    <div className={classes["hamburger-btn"]} onClick={() => toggleMenu()}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div className={classes["navbar__logo"]}>
                         <img className={classes['navbar__logo-img']} src={logo} alt="audiophile logo" />
                     </div>
