@@ -18,7 +18,7 @@ const Navbar = () => {
         <React.Fragment>
             <div className={classes.navbar}>
                 <div className={`padding-x ${classes["navbar__content"]}`}>
-                    <div className={classes["hamburger-btn"]} onClick={() => toggleMenu()}>
+                    <div className={classes["navbar__hamburger-btn"]} onClick={() => toggleMenu()}>
                         <span></span>
                         <span></span>
                         <span></span>
