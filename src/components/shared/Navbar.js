@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import classes from './Navbar.module.scss';
 
-import ProductPageLinks from './ProductPageLinks';
+import CategoryLinks from './CategoryLinks';
 
 import logo from '../../assets/shared/desktop/logo.svg';
 import cart from '../../assets/shared/desktop/icon-cart.svg';
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={classes["hamburger-menu"]}>
-                {openMenu ? <ProductPageLinks /> : ''}
+                {openMenu ? <CategoryLinks /> : ''}
             </div>
         </React.Fragment>
     );

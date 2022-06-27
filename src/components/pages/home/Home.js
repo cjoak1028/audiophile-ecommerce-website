@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProductPageLinks from '../../shared/ProductPageLinks';
+import CategoryLinks from '../../shared/CategoryLinks';
 import classes from './Home.module.scss';
 
 import speakerZx9Img from '../../../assets/home/mobile/image-speaker-zx9.png';
@@ -17,7 +17,7 @@ const Home = () => {
                 </div>
             </div>
             <div className={`content-wrapper padding-x ${classes["home__content"]}`}>
-                <ProductPageLinks />
+                <CategoryLinks />
                 <div className={classes['home-gallery']}>
                     <div className={classes['home-gallery__cell-1']}>
                         <div>
