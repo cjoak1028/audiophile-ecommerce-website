@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CategoryLinks from '../../shared/CategoryLinks';
+import CategoryLinks from '../../shared/CategoryLinks/CategoryLinks';
 import classes from './Home.module.scss';
 
 import speakerZx9Img from '../../../assets/home/mobile/image-speaker-zx9.png';
