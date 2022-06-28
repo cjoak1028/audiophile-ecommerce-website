@@ -3,7 +3,11 @@ import React from 'react';
 import CategoryLinks from '../../shared/CategoryLinks/CategoryLinks';
 import classes from './Home.module.scss';
 
-import speakerZx9Img from '../../../assets/home/mobile/image-speaker-zx9.png';
+import speakerImgMobile from '../../../assets/home/mobile/image-speaker-zx9.png';
+import speakerImgTablet from '../../../assets/home/tablet/image-speaker-zx9.png';
+import speakerImgDesktop from '../../../assets/home/desktop/image-speaker-zx9.png';
+
+
 import earphonesYx1Img from '../../../assets/home/mobile/image-earphones-yx1.jpg';
 
 const Home = () => {
@@ -21,10 +25,16 @@ const Home = () => {
                 <CategoryLinks />
                 <div className={classes['featured-products']}>
                     <div className={`${classes['featured-products__cell']} ${classes['featured-products__cell--1']}`}>
-                        <img src={speakerZx9Img} />
-                        <h1>ZX9 Speaker</h1>
-                        <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                        <a className={'btn btn--black'}>See Product</a>
+                        <picture>
+                            <source media="(min-width: 70em)" srcSet={speakerImgDesktop} />
+                            <source media="(min-width: 37.5em)" srcSet={speakerImgTablet} />
+                            <img src={speakerImgMobile} alt="speaker thumbnail" />
+                        </picture>
+                        <div className={classes['text-wrapper']}>
+                            <h1>ZX9 <br /> Speaker</h1>
+                            <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                            <a className={'btn btn--black'}>See Product</a>
+                        </div>
                     </div>
                     <div className={`${classes['featured-products__cell']} ${classes['featured-products__cell--2']}`}>
                         <h4>ZX7 Speaker</h4>
