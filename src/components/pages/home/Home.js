@@ -41,7 +41,7 @@ const Home = () => {
                         <a className={'btn btn--transparent'}>See Product</a>
                     </div>
                     <div className={`${classes['featured-products__cell']} ${classes['featured-products__cell--3']}`}>
-                        <img src={earphonesYx1Img} />
+
                     </div>
                     <div className={`${classes['featured-products__cell']} ${classes['featured-products__cell--4']}`}>
                         <h4>YX1 Earphones</h4>
