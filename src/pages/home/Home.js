@@ -1,14 +1,11 @@
 import React from 'react';
 
-import CategoryLinks from '../../shared/CategoryLinks/CategoryLinks';
+import CategoryLinks from '../../components/CategoryLinks';
 import classes from './Home.module.scss';
 
-import speakerImgMobile from '../../../assets/home/mobile/image-speaker-zx9.png';
-import speakerImgTablet from '../../../assets/home/tablet/image-speaker-zx9.png';
-import speakerImgDesktop from '../../../assets/home/desktop/image-speaker-zx9.png';
-
-
-import earphonesYx1Img from '../../../assets/home/mobile/image-earphones-yx1.jpg';
+import speakerImgMobile from '../../assets/home/mobile/image-speaker-zx9.png';
+import speakerImgTablet from '../../assets/home/tablet/image-speaker-zx9.png';
+import speakerImgDesktop from '../../assets/home/desktop/image-speaker-zx9.png';
 
 const Home = () => {
     return (

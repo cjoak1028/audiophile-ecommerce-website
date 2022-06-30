@@ -4,9 +4,9 @@ import classes from './CategoryLinks.module.scss';
 
 import CategoryLinkCard from './CategoryLinkCard';
 
-import headphonesImg from '../../../assets/shared/desktop/image-category-thumbnail-headphones.png';
-import speakersImg from '../../../assets/shared/desktop/image-category-thumbnail-speakers.png';
-import earphonesImg from '../../../assets/shared/desktop/image-category-thumbnail-earphones.png';
+import headphonesImg from '../assets/shared/desktop/image-category-thumbnail-headphones.png';
+import speakersImg from '../assets/shared/desktop/image-category-thumbnail-speakers.png';
+import earphonesImg from '../assets/shared/desktop/image-category-thumbnail-earphones.png';
 
 const CategoryLinks = () => {
     return (

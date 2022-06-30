@@ -1,5 +1,5 @@
-@import '../../../styles/abstracts/variables';
-@import '../../../styles/abstracts/mixins';
+@import '../../styles/abstracts/variables';
+@import '../../styles/abstracts/mixins';
 
 .home {
     position: absolute;
@@ -10,7 +10,7 @@
 
 .banner {
     color: white;
-    background: #191919 url('../../../assets/home/mobile/image-header.jpg') no-repeat center/contain;
+    background: #191919 url('../../assets/home/mobile/image-header.jpg') no-repeat center/contain;
     text-align: center;
     z-index: 0;
 
@@ -20,12 +20,12 @@
     padding: 40% 10%; // this needs to be responsive
 
     @include respond-above('BP-1') {
-        background-image: url('../../../assets/home/tablet/image-header.jpg');
+        background-image: url('../../assets/home/tablet/image-header.jpg');
         padding: 15% 30%;
     }
 
     @include respond-above('BP-3') {
-        background-image: url('../../../assets/home/desktop/image-hero.jpg');
+        background-image: url('../../assets/home/desktop/image-hero.jpg');
         padding: 10% 5%; // align with navbar padding
 
         text-align: left;
@@ -137,14 +137,14 @@
 
             height: 32rem;
             padding: 0 7%;
-            background: url('../../../assets/home/mobile/image-speaker-zx7.jpg') no-repeat center/cover;
+            background: url('../../assets/home/mobile/image-speaker-zx7.jpg') no-repeat center/cover;
 
             @include respond-above('BP-1') {
-                background-image: url('../../../assets/home/tablet/image-speaker-zx7.jpg')
+                background-image: url('../../assets/home/tablet/image-speaker-zx7.jpg')
             }
 
             @include respond-above('BP-3') {
-                background-image: url('../../../assets/home/desktop/image-speaker-zx7.jpg')
+                background-image: url('../../assets/home/desktop/image-speaker-zx7.jpg')
             }
 
             h4 {
@@ -154,17 +154,17 @@
 
         &--3 {
             height: 20rem;
-            background: $c-grey url('../../../assets/home/mobile/image-earphones-yx1.jpg') no-repeat center/cover;
+            background: $c-grey url('../../assets/home/mobile/image-earphones-yx1.jpg') no-repeat center/cover;
 
             @include respond-above('BP-2') {
                 grid-column: span 1;
                 height: 32rem;
-                background-image: url('../../../assets/home/tablet/image-earphones-yx1.jpg');
+                background-image: url('../../assets/home/tablet/image-earphones-yx1.jpg');
             }
 
             @include respond-above('BP-3') {
                 grid-column: span 1;
-                background-image: url('../../../assets/home/desktop/image-earphones-yx1.jpg');
+                background-image: url('../../assets/home/desktop/image-earphones-yx1.jpg');
             }
         }
 
