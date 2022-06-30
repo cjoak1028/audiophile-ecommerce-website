@@ -1,6 +1,8 @@
 import React from 'react';
 
 import CategoryLinks from '../../components/CategoryLinks';
+import About from '../../components/About';
+
 import classes from './Home.module.scss';
 
 import speakerImgMobile from '../../assets/home/mobile/image-speaker-zx9.png';
@@ -45,6 +47,7 @@ const Home = () => {
                         <a className={'btn btn--transparent'}>See Product</a>
                     </div>
                 </div>
+                <About />
             </div>
         </div >
     )

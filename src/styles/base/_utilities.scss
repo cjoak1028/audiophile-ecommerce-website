@@ -13,7 +13,7 @@
         padding-top: 20rem;
     }
 
-    &>* {
+    &>*:not(:last-child) {
         margin-bottom: 12rem;
 
         @include respond-above('BP-2') {

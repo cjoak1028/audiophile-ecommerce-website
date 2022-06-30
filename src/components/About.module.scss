@@ -1,0 +1,42 @@
+@import '../styles/abstracts/variables';
+@import '../styles/abstracts/mixins';
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        background: $c-grey url('../assets/shared/mobile/image-best-gear.jpg') no-repeat center/cover;
+        height: 30rem;
+        border-radius: 0.8rem;
+        overflow: hidden;
+        margin-bottom: 4rem;
+
+        @include respond-above('BP-1') {
+            background-image: url('../assets/shared/tablet/image-best-gear.jpg');
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        h4 {
+            margin: auto;
+            margin-bottom: 3.2rem;
+
+            span {
+                color: $c-orange;
+            }
+
+            @include respond-above('BP-1') {
+                font-size: 4rem;
+                letter-spacing: 1.43px;
+                line-height: 4.4rem;
+            }
+        }
+
+        p {
+            opacity: 50%;
+        }
+    }
+}
