@@ -3,6 +3,7 @@
 $breakpoints: (
     "BP-1": 30em,
     "BP-2": 37.5em,
+    "BP-2.5": 53.75em,
     "BP-3": 70em) !default;
 
 @mixin respond-above($breakpoint) {

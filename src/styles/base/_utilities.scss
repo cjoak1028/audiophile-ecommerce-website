@@ -1,9 +1,16 @@
 .padding-x {
-    padding: 0 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @include respond-above('BP-3') {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 .content-wrapper {
-    padding: 9.2rem 5% 0;
+    padding-top: 9.2rem;
+    padding-bottom: 9.2rem;
 
     @include respond-above('BP-2') {
         padding-top: 14.8rem;
@@ -13,7 +20,7 @@
         padding-top: 20rem;
     }
 
-    &>*:not(:last-child) {
+    &>* {
         margin-bottom: 12rem;
 
         @include respond-above('BP-2') {

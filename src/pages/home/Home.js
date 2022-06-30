@@ -12,7 +12,7 @@ import speakerImgDesktop from '../../assets/home/desktop/image-speaker-zx9.png';
 const Home = () => {
     return (
         <div className={classes.home}>
-            <div className={classes.banner}>
+            <div className={`${classes['banner']}`}>
                 <div className={classes["banner__content"]}>
                     <h6>New Product</h6>
                     <h1>XX99 Mark II Headphones</h1>
@@ -20,7 +20,7 @@ const Home = () => {
                     <a className={'btn btn--orange'}>See Product</a>
                 </div>
             </div>
-            <div className={`content-wrapper ${classes["home__content"]}`}>
+            <div className={`content-wrapper padding-x ${classes["home__content"]}`}>
                 <CategoryLinks />
                 <div className={classes['featured-products']}>
                     <div className={`${classes['featured-products__cell']} ${classes['featured-products__cell--1']}`}>
