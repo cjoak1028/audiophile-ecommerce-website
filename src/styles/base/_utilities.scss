@@ -37,4 +37,25 @@
     height: 100vh;
     background-color: rgba($c-black, 40%);
     z-index: 10;
+
+    @include respond-above('BP-3') {
+        display: none;
+    }
+}
+
+// FLEX UTILITIES
+.flex {
+    display: flex;
+}
+
+.flex-d-c {
+    flex-direction: column;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.flex-ai-c {
+    align-items: center;
 }
