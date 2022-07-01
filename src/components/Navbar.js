@@ -14,6 +14,14 @@ const Navbar = () => {
         setOpenMenu(prevOpenMenu => !prevOpenMenu);
     }
 
+    const hamburgerMenu = (
+        <div className={'overlay'}>
+            <div className={classes["hamburger-menu"]}>
+                <CategoryLinks />
+            </div>
+        </div>
+    )
+
     return (
         <React.Fragment>
             <div className={classes.navbar}>
@@ -35,9 +43,7 @@ const Navbar = () => {
                     <img className={classes.cart} src={cart} alt="shopping cart" />
                 </div>
             </div>
-            <div className={classes["hamburger-menu"]}>
-                {openMenu ? <CategoryLinks /> : ''}
-            </div>
+            {openMenu ? hamburgerMenu : ''}
         </React.Fragment>
     );
 }

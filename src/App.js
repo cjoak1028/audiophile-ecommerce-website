@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './pages/home/Home';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <React.Fragment>
       <Navbar />
       <Home />
+      <Footer />
     </React.Fragment>
   )
 }

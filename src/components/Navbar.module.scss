@@ -8,7 +8,10 @@
     height: 9rem;
     background-color: $c-black;
 
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 10;
 
     &__content {
@@ -94,6 +97,15 @@
 }
 
 .hamburger-menu {
+    position: fixed;
+    width: 100%;
+    top: 9rem;
+    z-index: 10;
+
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    overflow: hidden;
+
     &>* {
         padding: 0 5%;
         padding-top: 8.4rem;
