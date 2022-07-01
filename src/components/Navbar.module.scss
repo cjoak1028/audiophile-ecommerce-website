@@ -97,15 +97,21 @@
 }
 
 .hamburger-menu {
-    position: fixed;
+    position: absolute;
+    background-color: $c-white;
     width: 100%;
-    top: 9rem;
     z-index: 10;
 
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
 
-    overflow: hidden;
+    max-height: 73.4rem;
+    height: calc(100vh - 9rem); // responsive to screen size
+    overflow: auto;
+
+    @include respond-above('BP-2') {
+        max-height: 34rem;
+    }
 
     &>* {
         padding: 0 5%;
