@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import classes from './Navbar.module.scss';
 
@@ -9,6 +9,19 @@ import cart from '../assets/shared/desktop/icon-cart.svg';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    const isMounted = useRef(false);
+
+    // Since useEffect hook will always run on mount, isMMounted is used to prevent body.classList from toggling
+    // on initial render. Only after initial render will body.classList toggle whenever there is a change in
+    // dependency (openMenu)
+    useEffect(() => {
+        console.log(isMounted.current)
+        if (isMounted.current) {
+            document.body.classList.toggle('overflow-hidden');
+        } else {
+            isMounted.current = true;
+        }
+    }, [openMenu]);
 
     const toggleMenu = () => {
         setOpenMenu(prevOpenMenu => !prevOpenMenu);
@@ -49,3 +62,5 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+// Reference: https://typeofnan.dev/how-to-prevent-useeffect-from-running-on-mount-in-react/
