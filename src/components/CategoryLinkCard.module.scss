@@ -48,8 +48,14 @@
         width: 6rem;
         margin-bottom: 2rem;
 
+        transition: all .1s ease;
+
         img {
             height: 1rem;
+        }
+
+        &:hover {
+            color: $c-orange;
         }
     }
 }

@@ -24,17 +24,7 @@
         li {
             margin-bottom: 1.6rem;
 
-            a {
-                text-transform: uppercase;
-                font-size: 1.3rem;
-                letter-spacing: 2px;
-                line-height: 2.5rem;
-                cursor: pointer;
-            }
-        }
-
-        @include respond-above('BP-2') {
-            li {
+            @include respond-above('BP-2') {
                 display: inline-block;
                 margin-bottom: 0;
 
@@ -42,46 +32,90 @@
                     margin-right: 3.4rem;
                 }
             }
+
+            a {
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                letter-spacing: 2px;
+                line-height: 2.5rem;
+                cursor: pointer;
+                transition: all .1s ease;
+
+                &:hover {
+                    color: $c-orange;
+                }
+            }
         }
     }
 
-    &__description,
+    &__description {
+        opacity: 50%;
+        margin-bottom: 4.8rem;
+
+        @include respond-above('BP-3') {
+            width: 50%;
+        }
+    }
+
     &__copyright {
         opacity: 50%;
         margin-bottom: 4.8rem;
+
+        @include respond-above('BP-2') {
+            margin-bottom: 0;
+        }
     }
 
-    @include respond-above('BP-3') {
-        &__description {
-            width: 50%;
+    &__social-media {
+        height: 2.4rem;
+
+        &>*:not(:last-child) {
+            margin-right: 1.6rem;
         }
 
-        &__social-media {
+        @include respond-above('BP-3') {
             margin-top: -6rem;
         }
     }
 
-    &__social-media>*:not(:last-child) {
-        margin-right: 1.6rem;
-    }
+    &__icon-wrapper {
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: $c-white;
+        cursor: pointer;
+        transition: background-color .1s ease;
 
-    @include respond-above('BP-2') {
-        &__copyright {
-            margin-bottom: 0;
+        &:hover {
+            background-color: $c-orange;
         }
 
-        .flex-container--1 {
+        &:nth-of-type(1) {
+            mask-image: url('../assets/shared/desktop/icon-facebook.svg');
+        }
+
+        &:nth-of-type(2) {
+            mask-image: url('../assets/shared/desktop/icon-twitter.svg');
+            height: 1.95rem;
+        }
+
+        &:nth-of-type(3) {
+            mask-image: url('../assets/shared/desktop/icon-instagram.svg');
+        }
+    }
+
+    .flex-container-1 {
+        @include respond-above('BP-2') {
             align-items: flex-start;
         }
 
-        .flex-container--2 {
+        @include respond-above('BP-2.5') {
             flex-direction: row;
             justify-content: space-between;
         }
     }
 
-    @include respond-above('BP-2.5') {
-        .flex-container--1 {
+    .flex-container-2 {
+        @include respond-above('BP-2') {
             flex-direction: row;
             justify-content: space-between;
         }

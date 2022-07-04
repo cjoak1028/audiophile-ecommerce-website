@@ -8,15 +8,24 @@
     letter-spacing: 1px;
     cursor: pointer;
     width: 16rem;
+    transition: all .1s ease;
 
 
     &--orange {
         background-color: $c-orange;
+
+        &:hover {
+            background-color: $c-orange-light;
+        }
     }
 
     &--black {
         color: $c-white;
         background-color: $c-black;
+
+        &:hover {
+            background-color: #4C4C4C;
+        }
     }
 
     &--transparent {
@@ -24,5 +33,10 @@
         background-color: transparent;
         border: 1px solid $c-black;
         padding: calc(1.2rem - 1px) calc(3rem - 1px);
+
+        &:hover {
+            background-color: $c-black;
+            color: white;
+        }
     }
 }

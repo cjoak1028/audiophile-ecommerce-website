@@ -82,16 +82,29 @@
 
         a {
             cursor: pointer;
+            transition: color .1s ease;
 
             &:hover {
                 color: $c-orange;
-                transition: color .2s ease;
             }
         }
 
         @include respond-above("BP-3") {
             display: flex;
             justify-content: space-between;
+        }
+    }
+
+    &__cart-wrapper {
+        background-color: $c-white;
+        width: 2.3rem;
+        height: 2rem;
+        mask-image: url('../assets/shared/desktop/icon-cart.svg');
+        transition: background-color .1s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $c-orange;
         }
     }
 }

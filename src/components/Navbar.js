@@ -53,7 +53,8 @@ const Navbar = () => {
                         <a>Speakers</a>
                         <a>Earphones</a>
                     </div>
-                    <img className={classes.cart} src={cart} alt="shopping cart" />
+                    <div className={classes['navbar__cart-wrapper']}>
+                    </div>
                 </div>
             </div>
             {openMenu ? hamburgerMenu : ''}
