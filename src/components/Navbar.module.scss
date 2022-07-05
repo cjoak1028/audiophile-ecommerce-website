@@ -80,18 +80,20 @@
         left: 50%;
         transform: translateX(-50%);
 
-        a {
-            cursor: pointer;
-            transition: color .1s ease;
-
-            &:hover {
-                color: $c-orange;
-            }
-        }
-
         @include respond-above("BP-3") {
             display: flex;
             justify-content: space-between;
+        }
+    }
+
+    &__link {
+        cursor: pointer;
+        transition: color .1s ease;
+        text-decoration: none;
+        color: $c-white;
+
+        &:hover {
+            color: $c-orange;
         }
     }
 

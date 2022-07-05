@@ -3,13 +3,13 @@ import React from 'react';
 import CategoryLinks from '../../components/CategoryLinks';
 import About from '../../components/About';
 
-import classes from './Home.module.scss';
+import classes from './HomePage.module.scss';
 
 import speakerImgMobile from '../../assets/home/mobile/image-speaker-zx9.png';
 import speakerImgTablet from '../../assets/home/tablet/image-speaker-zx9.png';
 import speakerImgDesktop from '../../assets/home/desktop/image-speaker-zx9.png';
 
-const Home = () => {
+const HomePage = () => {
     return (
         <div className={classes.home}>
             <div className={`${classes['banner']}`}>
@@ -53,4 +53,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomePage;

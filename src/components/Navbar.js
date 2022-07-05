@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 
 import classes from './Navbar.module.scss';
 
@@ -47,12 +48,20 @@ const Navbar = () => {
                     <div className={classes["navbar__logo"]}>
                         <img className={classes['navbar__logo-img']} src={logo} alt="audiophile logo" />
                     </div>
-                    <div className={classes["navbar__links"]}>
-                        <a>Home</a>
+                    <ul className={classes["navbar__links"]}>
+                        <li><Link className={classes["navbar__link"]} to="/">Home</Link></li>
+                        <li><Link className={classes["navbar__link"]} to="/headphones">Headphones</Link></li>
+                        <li><Link className={classes["navbar__link"]} to="/speakers">Speakers</Link></li>
+                        <li><Link className={classes["navbar__link"]} to="/earphones">Earphones</Link></li>
+                        {/* <Link to="/">Home</Link>
+                        <Link to="/headphones">Headphones</Link>
+                        <Link to="/speakers">Speakers</Link>
+                        <Link to="/earphones">Earphones</Link> */}
+                        {/* <a>Home</a>
                         <a>Headphones</a>
                         <a>Speakers</a>
-                        <a>Earphones</a>
-                    </div>
+                        <a>Earphones</a> */}
+                    </ul>
                     <div className={classes['navbar__cart-wrapper']}>
                     </div>
                 </div>

@@ -1,16 +1,30 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+
 import Navbar from './components/Navbar';
-import Home from './pages/home/Home';
+import HomePage from './pages/HomePage/HomePage';
+import HeadphonesPage from './pages/HeadphonesPage/HeadphonesPage';
+import SpeakersPage from './pages/SpeakersPage/SpeakersPage';
+import EarphonesPage from './pages/EarphonesPage/EarphonesPage';
 import Footer from './components/Footer';
 
 
 const App = () => {
   return (
-    <React.Fragment>
+    <Router>
       <Navbar />
-      <Home />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/headphones" element={<HeadphonesPage />} />
+        <Route path="/speakers" element={<SpeakersPage />} />
+        <Route path="/earphones" element={<EarphonesPage />} />
+      </Routes>
       <Footer />
-    </React.Fragment>
+    </Router>
   )
 }
 
