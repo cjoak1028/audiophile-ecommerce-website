@@ -30,6 +30,8 @@
         justify-content: space-between;
         cursor: pointer;
 
+        flex-shrink: 0;
+
         width: 1.6rem;
         height: 1.5rem;
 
@@ -97,13 +99,15 @@
         }
     }
 
-    &__cart-wrapper {
+    &__cart {
         background-color: $c-white;
         width: 2.3rem;
         height: 2rem;
         mask-image: url('../assets/shared/desktop/icon-cart.svg');
         transition: background-color .1s ease;
         cursor: pointer;
+
+        flex-shrink: 0;
 
         &:hover {
             background-color: $c-orange;

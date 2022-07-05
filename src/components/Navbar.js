@@ -52,7 +52,7 @@ const Navbar = () => {
                         <li><Link className={classes["navbar__link"]} to="/speakers">Speakers</Link></li>
                         <li><Link className={classes["navbar__link"]} to="/earphones">Earphones</Link></li>
                     </ul>
-                    <div className={classes['navbar__cart-wrapper']}>
+                    <div className={classes['navbar__cart']}>
                     </div>
                 </div>
             </div>
