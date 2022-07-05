@@ -1,73 +1,8 @@
 @import '../../styles/abstracts/variables';
 @import '../../styles/abstracts/mixins';
 
-.home {
-    // position: absolute;
-    // top: 0;
-    // z-index: 0;
-    // width: 100%;
-}
-
-.banner {
-    color: white;
-    background: #191919 url('../../assets/home/mobile/image-header.jpg') no-repeat center/contain;
-    text-align: center;
-    z-index: 0;
-
-    display: flex;
-    justify-content: center;
-
-    padding: 40% 10%; // this needs to be responsive
-
-    @include respond-above('BP-1') {
-        background-image: url('../../assets/home/tablet/image-header.jpg');
-        padding: 15% 30%;
-    }
-
-    @include respond-above('BP-3') {
-        background-image: url('../../assets/home/desktop/image-hero.jpg');
-        padding: 10% 10%; // align with navbar padding
-
-        text-align: left;
-        justify-content: left;
-    }
-
-    &__content {
-        margin-top: 9rem; //navbar height
-
-        @include respond-above('BP-3') {
-            min-width: 40rem;
-            width: 25%;
-            max-width: 50rem;
-        }
-
-        h6 {
-            text-transform: uppercase;
-            opacity: 50%;
-            font-weight: 400;
-            letter-spacing: 1rem;
-            margin-bottom: 1.6rem;
-        }
-
-        h1 {
-            margin-bottom: 2.4rem;
-        }
-
-        p {
-            opacity: 75%;
-            margin: auto;
-            margin-bottom: 2.8rem;
-            max-width: 28rem;
-
-            @include respond-above('BP-2') {
-                max-width: 40rem;
-            }
-
-            @include respond-above('BP-3') {
-                margin-left: 0;
-            }
-        }
-    }
+.home-page {
+    margin-top: 9rem;
 }
 
 .featured-products {

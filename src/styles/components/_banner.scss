@@ -4,10 +4,90 @@
     text-align: center;
     width: 100%;
 
-    &--home {}
+    &--home {
+        background-color: #191919;
+        background-image: url('../../assets/home/mobile/image-header.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+        z-index: 0;
+        margin-top: -9rem;
+
+        @include respond-above('BP-1') {
+            background-image: url('../../assets/home/tablet/image-header.jpg');
+        }
+
+        @include respond-above('BP-3') {
+            background-image: url('../../assets/home/desktop/image-hero.jpg');
+            background-size: contain;
+
+            text-align: left;
+            justify-content: left;
+        }
+    }
+
+    &--home &__content {
+        padding: calc(9rem + 35%) 7% 35%;
+        max-width: 31.7rem;
+        margin: auto;
+
+        @include respond-above('BP-1') {
+            padding: min(calc(9rem + 20%), 27rem) 7% min(20%, 18rem);
+            max-width: 40rem;
+        }
+
+        @include respond-above('BP-2') {
+            max-width: 60rem;
+        }
+
+        @include respond-above('BP-3') {
+            min-width: 40rem;
+            width: 50%;
+            margin: 0;
+
+            padding: calc(9rem + 10%) 0 10% 7%;
+        }
+
+        h6 {
+            text-transform: uppercase;
+            opacity: 50%;
+            font-weight: 400;
+            letter-spacing: 1rem;
+            margin-bottom: 1.6rem;
+
+            @include respond-below('BP-0.5') {
+                font-size: 1.3rem;
+                letter-spacing: 0.8rem;
+            }
+        }
+
+        h1 {
+            margin-bottom: 2.4rem;
+
+            @include respond-below('BP-0.5') {
+                font-size: 2.8rem;
+                line-height: 3rem;
+            }
+        }
+
+        p {
+            opacity: 75%;
+            margin: auto;
+            margin-bottom: 2.8rem;
+
+            @include respond-above('BP-2') {
+                max-width: 40rem;
+            }
+
+            @include respond-above('BP-3') {
+                margin-left: 0;
+                width: 100%;
+                max-width: auto;
+            }
+        }
+    }
 
     &--category {
-        padding: min(7%, 10rem) 0;
-        max-height: 23rem;
+        padding: min(9%, 10rem) 0;
     }
 }
