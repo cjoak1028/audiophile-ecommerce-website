@@ -24,10 +24,7 @@ const Footer = () => {
             </p>
             <div className={`flex flex-d-c flex-jc-c ${classes['flex-container-2']}`}>
                 <p className={classes['footer__copyright']}>Copyright 2021. All Rights Reserved</p>
-                <div className={`flex flex-ai-c ${classes['footer__social-media']}`}>
-                    {/* <img className={classes['footer__icon']} src={facebookIcon} alt='facebook icon' />
-                    <img className={classes['footer__icon']} src={twitterIcon} alt='twittericon' />
-                    <img className={classes['footer__icon']} src={instagramIcon} alt='instagram icon' /> */}
+                <div className={`flex flex-jc-c flex-ai-c ${classes['footer__social-media']}`}>
                     <div className={classes['footer__icon-wrapper']}></div>
                     <div className={classes['footer__icon-wrapper']}></div>
                     <div className={classes['footer__icon-wrapper']}></div>

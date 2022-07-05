@@ -1,5 +1,13 @@
 .banner {
+    background-color: $c-black;
+    color: white;
+    text-align: center;
+    width: 100%;
+
     &--home {}
 
-    &--category {}
+    &--category {
+        padding: min(7%, 10rem) 0;
+        max-height: 23rem;
+    }
 }

@@ -4,7 +4,11 @@ import classes from './HeadphonesPage.module.scss';
 
 const HeadphonesPage = () => {
     return (
-        <h1>HEADPHONES PAGE</h1>
+        <div className={`${classes['headphones-page']}`}>
+            <div className='flex flex-jc-c flex-ai-c banner banner--category'>
+                <h2>Headphones</h2>
+            </div>
+        </div>
     );
 }
 
