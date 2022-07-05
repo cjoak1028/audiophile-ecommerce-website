@@ -6,15 +6,13 @@ import classes from './Navbar.module.scss';
 import CategoryLinks from './CategoryLinks';
 
 import logo from '../assets/shared/desktop/logo.svg';
-import cart from '../assets/shared/desktop/icon-cart.svg';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const isMounted = useRef(false);
 
     // Since useEffect hook will always run on mount, isMMounted is used to prevent body.classList from toggling
-    // on initial render. Only after initial render will body.classList toggle whenever there is a change in
-    // dependency (openMenu)
+    // on initial render. Only after initial render will body.classList toggle whenever there is a change in openMenu's state
     useEffect(() => {
         console.log(isMounted.current)
         if (isMounted.current) {
@@ -53,14 +51,6 @@ const Navbar = () => {
                         <li><Link className={classes["navbar__link"]} to="/headphones">Headphones</Link></li>
                         <li><Link className={classes["navbar__link"]} to="/speakers">Speakers</Link></li>
                         <li><Link className={classes["navbar__link"]} to="/earphones">Earphones</Link></li>
-                        {/* <Link to="/">Home</Link>
-                        <Link to="/headphones">Headphones</Link>
-                        <Link to="/speakers">Speakers</Link>
-                        <Link to="/earphones">Earphones</Link> */}
-                        {/* <a>Home</a>
-                        <a>Headphones</a>
-                        <a>Speakers</a>
-                        <a>Earphones</a> */}
                     </ul>
                     <div className={classes['navbar__cart-wrapper']}>
                     </div>
