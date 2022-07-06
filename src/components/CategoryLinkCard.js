@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './CategoryLinkCard.module.scss';
 
-import arrowImg from '..//assets/shared/desktop/icon-arrow-right.svg';
+import arrowImg from '../assets/shared/desktop/icon-arrow-right.svg';
 
 const CategoryLinkCard = (props) => {
     return (
