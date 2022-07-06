@@ -1,11 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import classes from './Footer.module.scss';
 
 import logoImg from '../assets/shared/desktop/logo.svg';
-import facebookIcon from '../assets/shared/desktop/icon-facebook.svg';
-import twitterIcon from '../assets/shared/desktop/icon-twitter.svg';
-import instagramIcon from '../assets/shared/desktop/icon-instagram.svg';
 
 const Footer = () => {
     return (
@@ -13,10 +11,10 @@ const Footer = () => {
             <div className={`flex flex-d-c flex-ai-c ${classes['flex-container-1']}`}>
                 <img className={classes['footer__logo']} src={logoImg} alt='logo' />
                 <ul className={classes["footer__links"]}>
-                    <li><a>Home</a></li>
-                    <li><a>Headphones</a></li>
-                    <li><a>Speakers</a></li>
-                    <li><a>Earphones</a></li>
+                    <li><Link className={classes['footer__link']} to="/">Home</Link></li>
+                    <li><Link className={classes['footer__link']} to="/headphones">Headphones</Link></li>
+                    <li><Link className={classes['footer__link']} to="/speakers">Speakers</Link></li>
+                    <li><Link className={classes['footer__link']} to="/earphones">Earphones</Link></li>
                 </ul>
             </div>
             <p className={classes['footer__description']}>

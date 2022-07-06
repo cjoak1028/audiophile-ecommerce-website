@@ -32,19 +32,21 @@
                     margin-right: 3.4rem;
                 }
             }
+        }
+    }
 
-            a {
-                text-transform: uppercase;
-                font-size: 1.3rem;
-                letter-spacing: 2px;
-                line-height: 2.5rem;
-                cursor: pointer;
-                transition: all .1s ease;
+    &__link {
+        color: $c-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        line-height: 2.5rem;
+        cursor: pointer;
+        transition: all .1s ease;
 
-                &:hover {
-                    color: $c-orange;
-                }
-            }
+        &:hover {
+            color: $c-orange;
         }
     }
 
