@@ -2,6 +2,7 @@
 @import '../styles/abstracts/mixins';
 
 .footer {
+    width: 100%;
     background-color: $c-black;
     color: $c-white;
     text-align: center;
@@ -11,6 +12,9 @@
 
     @include respond-above('BP-2') {
         text-align: left;
+
+        position: absolute;
+        bottom: 0;
     }
 
     &__logo {
