@@ -11,10 +11,10 @@ const HeadphonesPage = () => {
             <div className='flex flex-jc-c flex-ai-c banner banner--category'>
                 <h2>Headphones</h2>
             </div>
-            {/* <div className='padding-x content-wrapper'>
+            <div className='padding-x content-wrapper'>
                 <CategoryLinks />
                 <About />
-            </div> */}
+            </div>
         </div>
     );
 }
