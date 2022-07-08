@@ -1,0 +1,7 @@
+{
+  "short_name": "Audiophile Website",
+  "name": "Audiophile E-commerce Website",
+  "icons": [],
+  "start_url": "./index.html",
+  "display": "standalone"
+}
