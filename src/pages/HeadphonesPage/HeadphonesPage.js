@@ -6,7 +6,10 @@ import Product from '../../components/Product';
 import CategoryLinks from '../../components/CategoryLinks';
 import About from '../../components/About';
 
-import image from '../../assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg';
+// import image from '../../assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg';
+// import image from '../../assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg';
+import image from '../../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg';
+
 
 const HeadphonesPage = () => {
     const [data, setData] = useState(null);
