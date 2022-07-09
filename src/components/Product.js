@@ -7,6 +7,7 @@ const Product = (props) => {
         <div className={classes['product']}>
             <img className={classes['product__img']} src={props.imgSrc} alt={`${props.model} preview`} />
             <div className={classes['product__text']}>
+                {props.new ? <h6 className={classes['product__new']}>New Product</h6> : ''}
                 <h2 className={classes['product__model']}>{props.model}</h2>
                 <p className={classes['product__description']}>{props.description}</p>
                 <a className={'btn btn--orange'}>See Product</a>

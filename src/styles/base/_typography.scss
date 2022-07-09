@@ -40,7 +40,8 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 3.5rem;
 
     @include respond-above('BP-2') {
         font-size: 4rem;
