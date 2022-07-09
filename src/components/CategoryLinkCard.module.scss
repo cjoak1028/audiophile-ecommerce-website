@@ -11,8 +11,10 @@
     align-items: center;
     justify-content: space-between;
 
+    margin-top: 4rem;
+
     &:not(:last-child) {
-        margin-bottom: 6rem;
+        margin-bottom: 1.6rem;
 
         @include respond-above("BP-2") {
             margin-bottom: 0rem;
