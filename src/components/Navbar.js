@@ -43,11 +43,11 @@ const Navbar = () => {
                         <span></span>
                         <span></span>
                     </div>
-
-                    <Link className={classes["navbar__logo-link"]} to="/">
-                        <img className={classes['navbar__logo-img']} src={logo} alt="audiophile logo" />
-                    </Link>
-
+                    <div className={classes["navbar__logo-container"]}>
+                        <Link className={classes["navbar__logo-link"]} to="/">
+                            <img className={classes['navbar__logo-img']} src={logo} alt="audiophile logo" />
+                        </Link>
+                    </div>
                     <ul className={classes["navbar__links"]}>
                         <li><Link className={classes["navbar__link"]} to="/">Home</Link></li>
                         <li><Link className={classes["navbar__link"]} to="/headphones">Headphones</Link></li>
