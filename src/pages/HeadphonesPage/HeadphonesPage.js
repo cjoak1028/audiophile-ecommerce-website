@@ -6,9 +6,7 @@ import Product from '../../components/Product';
 import CategoryLinks from '../../components/CategoryLinks';
 import About from '../../components/About';
 
-// import image from '../../assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg';
-// import image from '../../assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg';
-import image from '../../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg';
+import image from '../../assets/shared/desktop/image-xx99-mark-two-headphones.jpg';
 
 
 const HeadphonesPage = () => {
@@ -40,7 +38,7 @@ const HeadphonesPage = () => {
     }) : '';
 
     return (
-        <div className={`${classes['headphones-page']}`}>
+        <div className={`margin-top ${classes['headphones-page']}`}>
             <div className='flex flex-jc-c flex-ai-c banner banner--category'>
                 <h2>Headphones</h2>
             </div>
