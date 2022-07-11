@@ -43,9 +43,11 @@ const Navbar = () => {
                         <span></span>
                         <span></span>
                     </div>
-                    <div className={classes["navbar__logo"]}>
+
+                    <Link className={classes["navbar__logo-link"]} to="/">
                         <img className={classes['navbar__logo-img']} src={logo} alt="audiophile logo" />
-                    </div>
+                    </Link>
+
                     <ul className={classes["navbar__links"]}>
                         <li><Link className={classes["navbar__link"]} to="/">Home</Link></li>
                         <li><Link className={classes["navbar__link"]} to="/headphones">Headphones</Link></li>
