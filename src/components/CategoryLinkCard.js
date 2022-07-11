@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import classes from './CategoryLinkCard.module.scss';
 
@@ -9,7 +10,7 @@ const CategoryLinkCard = (props) => {
         <div className={classes["category-card"]}>
             <img className={classes["category-card__thumbnail"]} src={props.image} alt="thumbnail" />
             <h6 className={classes["category-card__title"]}>{props.title}</h6>
-            <a className={classes["category-card__link"]}>Shop <img src={arrowImg} alt="right arrow" /></a>
+            <Link className={classes["category-card__link"]} to={props.link}>Shop <img src={arrowImg} alt="right arrow" /></Link>
         </div>
     );
 };

@@ -11,9 +11,9 @@ import earphonesImg from '../assets/shared/desktop/image-category-thumbnail-earp
 const CategoryLinks = () => {
     return (
         <div className={classes["category-links"]}>
-            <CategoryLinkCard image={headphonesImg} title="Headphones" />
-            <CategoryLinkCard image={speakersImg} title="Speakers" />
-            <CategoryLinkCard image={earphonesImg} title="Earphones" />
+            <CategoryLinkCard link="/headphones" image={headphonesImg} title="Headphones" />
+            <CategoryLinkCard link="/speakers" image={speakersImg} title="Speakers" />
+            <CategoryLinkCard link="/earphones" image={earphonesImg} title="Earphones" />
         </div>
     );
 };
