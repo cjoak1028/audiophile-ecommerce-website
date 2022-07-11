@@ -6,7 +6,7 @@ import Product from '../../components/Product';
 import CategoryLinks from '../../components/CategoryLinks';
 import About from '../../components/About';
 
-import image from '../../assets/shared/desktop/image-xx99-mark-two-headphones.jpg';
+import image from '../../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg';
 
 
 const HeadphonesPage = () => {

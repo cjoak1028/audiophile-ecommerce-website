@@ -6,7 +6,7 @@ import Product from '../../components/Product';
 import CategoryLinks from '../../components/CategoryLinks';
 import About from '../../components/About';
 
-import image from '../../assets/shared/desktop/image-zx9-speaker.jpg';
+import image from '../../assets/product-zx9-speaker/desktop/image-product.jpg';
 
 const SpeakersPage = () => {
     const [data, setData] = useState(null);
@@ -35,6 +35,7 @@ const SpeakersPage = () => {
             <Product new={product.new} imgSrc={image} model={product.model} description={product.description} />
         )
     }) : '';
+
     return (
         <div className={`margin-top ${classes['speakers-page']}`}>
             <div className='flex flex-jc-c flex-ai-c banner banner--category'>
