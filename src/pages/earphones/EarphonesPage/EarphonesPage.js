@@ -39,7 +39,7 @@ const EarphonesPage = () => {
     return (
         <div className={`margin-top ${classes['earphones-page']}`}>
             <div className='flex flex-jc-c flex-ai-c banner banner--category'>
-                <h2>Speakers</h2>
+                <h2>Earphones</h2>
             </div>
             <div className='padding-x content-wrapper'>
                 <div className={classes['earphones__products']}>
