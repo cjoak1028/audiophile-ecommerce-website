@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import classes from './Footer.module.scss';
 
-import logoImg from '../assets/shared/desktop/logo.svg';
+import logoImg from '@assets/shared/desktop/logo.svg';
 
 const Footer = () => {
     return (

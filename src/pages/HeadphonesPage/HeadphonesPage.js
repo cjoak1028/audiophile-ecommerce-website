@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 import classes from './HeadphonesPage.module.scss';
 
-import Product from '../../components/Product';
-import CategoryLinks from '../../components/CategoryLinks';
-import About from '../../components/About';
+import Product from '@components/Product';
+import CategoryLinks from '@components/CategoryLinks';
+import About from '@components/About';
 
-import image from '../../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg';
+import image from '@assets/product-xx99-mark-two-headphones/desktop/image-product.jpg';
 
 
 const HeadphonesPage = () => {

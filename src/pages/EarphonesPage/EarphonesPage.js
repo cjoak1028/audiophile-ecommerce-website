@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 import classes from './EarphonesPage.module.scss';
 
-import Product from '../../components/Product';
-import CategoryLinks from '../../components/CategoryLinks';
-import About from '../../components/About';
+import Product from '@components/Product';
+import CategoryLinks from '@components/CategoryLinks';
+import About from '@components/About';
 
-import image from '../../assets/product-yx1-earphones/desktop/image-product.jpg';
+import image from '@assets/product-yx1-earphones/desktop/image-product.jpg';
 
 const EarphonesPage = () => {
     const [data, setData] = useState(null);

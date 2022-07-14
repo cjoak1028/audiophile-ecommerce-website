@@ -5,7 +5,7 @@ import classes from './Navbar.module.scss';
 
 import CategoryLinks from './CategoryLinks';
 
-import logo from '../assets/shared/desktop/logo.svg';
+import logo from '@assets/shared/desktop/logo.svg';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
