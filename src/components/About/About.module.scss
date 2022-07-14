@@ -1,5 +1,8 @@
-@import '../styles/abstracts/variables';
-@import '../styles/abstracts/mixins';
+// @import '../styles/abstracts/variables';
+// @import '../styles/abstracts/mixins';
+@use '~styles/abstracts/variables' as *;
+@use '~styles/abstracts/mixins' as *;
+
 
 .about {
     display: flex;
@@ -13,19 +16,19 @@
     }
 
     &__img {
-        background: $c-grey url('../assets/shared/mobile/image-best-gear.jpg') no-repeat center/cover;
+        background: $c-grey url('~assets/shared/mobile/image-best-gear.jpg') no-repeat center/cover;
         height: 30rem;
         border-radius: 0.8rem;
         overflow: hidden;
         margin-bottom: 4rem;
 
         @include respond-above('BP-2') {
-            background-image: url('../assets/shared/tablet/image-best-gear.jpg');
+            background-image: url('~assets/shared/tablet/image-best-gear.jpg');
             margin-bottom: 6.3rem;
         }
 
         @include respond-above('BP-2.5') {
-            background-image: url('../assets/shared/desktop/image-best-gear.jpg');
+            background-image: url('~assets/shared/desktop/image-best-gear.jpg');
             margin: 0;
 
             width: calc(50% - 1.5rem); //1.5rem is 1/2 of featured products column gap

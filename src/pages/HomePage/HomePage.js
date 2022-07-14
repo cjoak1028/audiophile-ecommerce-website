@@ -1,13 +1,13 @@
 import React from 'react';
 
-import CategoryLinks from '../../components/CategoryLinks';
-import About from '../../components/About';
+import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
+import About from '@components/About/About';
 
 import classes from './HomePage.module.scss';
 
-import speakerImgMobile from '../../assets/home/mobile/image-speaker-zx9.png';
-import speakerImgTablet from '../../assets/home/tablet/image-speaker-zx9.png';
-import speakerImgDesktop from '../../assets/home/desktop/image-speaker-zx9.png';
+import speakerImgMobile from '@assets/home/mobile/image-speaker-zx9.png';
+import speakerImgTablet from '@assets/home/tablet/image-speaker-zx9.png';
+import speakerImgDesktop from '@assets/home/desktop/image-speaker-zx9.png';
 
 const HomePage = () => {
     return (

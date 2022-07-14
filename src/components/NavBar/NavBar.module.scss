@@ -1,5 +1,5 @@
-@import '../styles/abstracts/variables';
-@import '../styles/abstracts/mixins';
+@use '~styles/abstracts/variables' as *;
+@use '~styles/abstracts/mixins' as *;
 
 .navbar {
     display: flex;
@@ -109,7 +109,7 @@
         background-color: $c-white;
         width: 2.3rem;
         height: 2rem;
-        mask-image: url('../assets/shared/desktop/icon-cart.svg');
+        mask-image: url('~assets/shared/desktop/icon-cart.svg');
         transition: background-color .1s ease;
         cursor: pointer;
 

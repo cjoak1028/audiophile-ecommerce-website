@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 import classes from './SpeakersPage.module.scss';
 
-import Product from '../../components/Product';
-import CategoryLinks from '../../components/CategoryLinks';
-import About from '../../components/About';
+import Product from '@components/Product/Product';
+import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
+import About from '@components/About/About';
 
-import image from '../../assets/product-zx9-speaker/desktop/image-product.jpg';
+import image from '@assets/product-zx9-speaker/desktop/image-product.jpg';
 
 const SpeakersPage = () => {
     const [data, setData] = useState(null);

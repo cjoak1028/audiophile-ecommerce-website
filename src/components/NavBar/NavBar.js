@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
 
-import classes from './Navbar.module.scss';
+import classes from './NavBar.module.scss';
 
-import CategoryLinks from './CategoryLinks';
+import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
 
 import logo from '@assets/shared/desktop/logo.svg';
 
-const Navbar = () => {
+const NavBar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const isMounted = useRef(false);
 
@@ -63,6 +63,6 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default NavBar;
 
 // Reference: https://typeofnan.dev/how-to-prevent-useeffect-from-running-on-mount-in-react/
