@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useFetchLocalData from '@hooks/useFetchLocalData.js';
 
 import classes from './HeadphonesPage.module.scss';
 
@@ -10,26 +11,7 @@ import image from '@assets/product-xx99-mark-two-headphones/desktop/image-produc
 
 
 const HeadphonesPage = () => {
-    const [data, setData] = useState(null);
-
-    const getData = () => {
-        fetch('./data/products.json')
-            .then((res) => {
-                console.log(res);
-                return res.json();
-            })
-            .then((data) => {
-                console.log(data);
-                setData(data);
-            })
-            .catch((err) => {
-                console.log(err)
-            });
-    };
-
-    useEffect(() => {
-        getData();
-    }, []);
+    const { data } = useFetchLocalData('./data/products.json');
 
     const headphonesProductList = data ? data[0].products.map(product => {
         return (

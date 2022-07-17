@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useFetchLocalData from '@hooks/useFetchLocalData.js';
 
 import classes from './SpeakersPage.module.scss';
 
@@ -9,26 +10,7 @@ import About from '@components/About/About';
 import image from '@assets/product-zx9-speaker/desktop/image-product.jpg';
 
 const SpeakersPage = () => {
-    const [data, setData] = useState(null);
-
-    const getData = () => {
-        fetch('./data/products.json')
-            .then((res) => {
-                console.log(res);
-                return res.json();
-            })
-            .then((data) => {
-                console.log(data);
-                setData(data);
-            })
-            .catch((err) => {
-                console.log(err)
-            });
-    };
-
-    useEffect(() => {
-        getData();
-    }, []);
+    const { data } = useFetchLocalData('./data/products.json');
 
     const speakersProductList = data ? data[1].products.map(product => {
         return (

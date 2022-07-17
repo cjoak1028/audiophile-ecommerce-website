@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useFetchLocalData from '@hooks/useFetchLocalData.js';
 
 import classes from './EarphonesPage.module.scss';
 
@@ -9,26 +10,7 @@ import About from '@components/About/About';
 import image from '@assets/product-yx1-earphones/desktop/image-product.jpg';
 
 const EarphonesPage = () => {
-    const [data, setData] = useState(null);
-
-    const getData = () => {
-        fetch('./data/products.json')
-            .then((res) => {
-                console.log(res);
-                return res.json();
-            })
-            .then((data) => {
-                console.log(data);
-                setData(data);
-            })
-            .catch((err) => {
-                console.log(err)
-            });
-    };
-
-    useEffect(() => {
-        getData();
-    }, []);
+    const { data } = useFetchLocalData('./data/products.json');
 
     const earphonesProductList = data ? data[2].products.map(product => {
         return (
