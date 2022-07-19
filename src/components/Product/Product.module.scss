@@ -16,13 +16,17 @@
         }
     }
 
-    &__img {
+    &__img-container {
         margin-bottom: 3.2rem;
         border-radius: .8rem;
 
         @include respond-above('BP-2.5') {
             width: 50%;
             margin-bottom: 0;
+        }
+
+        img {
+            width: 100%;
         }
     }
 
