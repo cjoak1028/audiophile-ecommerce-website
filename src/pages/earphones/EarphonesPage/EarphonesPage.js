@@ -7,14 +7,12 @@ import Product from '@components/Product/Product';
 import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
 import About from '@components/About/About';
 
-import image from '@assets/product-yx1-earphones/desktop/image-product.jpg';
-
 const EarphonesPage = () => {
     const { data } = useFetchLocalData('./data/products.json');
 
     const earphonesProductList = data ? data[2].products.map(product => {
         return (
-            <Product new={product.new} imgSrc={image} model={product.model} description={product.description} />
+            <Product new={product.new} images={product.images} model={product.model} description={product.description} />
         )
     }) : '';
 

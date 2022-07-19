@@ -7,15 +7,12 @@ import Product from '@components/Product/Product';
 import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
 import About from '@components/About/About';
 
-import image from '@assets/product-xx99-mark-two-headphones/desktop/image-product.jpg';
-
-
 const HeadphonesPage = () => {
     const { data } = useFetchLocalData('./data/products.json');
 
     const headphonesProductList = data ? data[0].products.map(product => {
         return (
-            <Product new={product.new} imgSrc={image} model={product.model} description={product.description} />
+            <Product new={product.new} images={product.images} model={product.model} description={product.description} />
         )
     }) : '';
 
