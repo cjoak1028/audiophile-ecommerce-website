@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 const useFetchLocalData = (url) => {
     const [data, setData] = useState(null);
 
-    console.log('fuck!');
-
     useEffect(() => {
         fetch(url)
             .then((res) => {

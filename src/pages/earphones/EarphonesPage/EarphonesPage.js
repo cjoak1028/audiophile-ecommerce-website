@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import useFetchLocalData from '@hooks/useFetchLocalData.js';
 
 import classes from './EarphonesPage.module.scss';
