@@ -1,18 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const useFetchLocalData = (url) => {
     const [data, setData] = useState(null);
 
-    fetch(url)
-        .then((res) => {
-            return res.json();
-        })
-        .then((data) => {
-            setData(data);
-        })
-        .catch((err) => {
-            console.log(err)
-        });
+    console.log('fuck!');
+
+    useEffect(() => {
+        fetch(url)
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                setData(data);
+            })
+            .catch((err) => {
+                console.log(err)
+            });
+    }, [url])
 
     return { data };
 };
