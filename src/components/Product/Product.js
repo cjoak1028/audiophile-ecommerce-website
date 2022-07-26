@@ -35,13 +35,6 @@ const Product = (props) => {
 
     return (
         <div className={classes['product']}>
-            {/* <img
-                className={classes['product__img']}
-                src={imgMobile}
-                srcSet={`${imgTablet} 480w, ${imgDesktop} 1080w`}
-                sizes="(min-width: 30em) 480px, (min-width: 53.75em) 1080px, 100vw"
-                alt={`${props.model} preview`}
-            /> */}
             <picture className={classes['product__img-container']}>
                 <source media="(min-width: 53.75em)" srcSet={imgDesktop} />
                 <source media="(min-width: 30em)" srcSet={imgTablet} />

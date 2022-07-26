@@ -12,7 +12,7 @@ const HeadphonesPage = () => {
 
     const headphonesProductList = data ? data[0].products.map(product => {
         return (
-            <Product new={product.new} images={product.images} model={product.model} description={product.description} />
+            <Product key={product.model} new={product.new} images={product.images} model={product.model} description={product.description} />
         )
     }) : '';
 
