@@ -38,7 +38,7 @@ const Product = (props) => {
             <picture className={classes['product__img-container']}>
                 <source media="(min-width: 53.75em)" srcSet={imgDesktop} />
                 <source media="(min-width: 30em)" srcSet={imgTablet} />
-                <img loading="lazy" src={imgMobile} alt={`${props.model} preview`} />
+                <img src={imgMobile} alt={`${props.model} preview`} />
             </picture>
             <div className={classes['product__text']}>
                 {props.new ? <h6 className={classes['product__new']}>New Product</h6> : ''}

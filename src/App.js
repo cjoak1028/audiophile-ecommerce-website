@@ -7,10 +7,10 @@ import {
 
 import NavBar from '@components/NavBar/NavBar';
 import Footer from '@components/Footer/Footer';
-import HomePage from '@pages/HomePage/HomePage';
-import HeadphonesPage from '@pages/headphones/HeadphonesPage/HeadphonesPage';
-import SpeakersPage from '@pages/speakers/SpeakersPage/SpeakersPage';
-import EarphonesPage from '@pages/earphones/EarphonesPage/EarphonesPage';
+import HomePage from '@pages/HomePage';
+import HeadphonesPage from '@pages/HeadphonesPage';
+import SpeakersPage from '@pages/SpeakersPage';
+import EarphonesPage from '@pages/EarphonesPage';
 
 
 
