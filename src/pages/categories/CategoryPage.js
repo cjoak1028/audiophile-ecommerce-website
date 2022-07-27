@@ -9,7 +9,7 @@ const CategoryPage = (props) => {
             <div className='flex flex-jc-c flex-ai-c banner banner--category'>
                 <h2>{props.category}</h2>
             </div>
-            <div className='padding-x content-wrapper'>
+            <div className='padding-x content-wrapper content-wrapper--category'>
                 <div>
                     {props.children}
                 </div>

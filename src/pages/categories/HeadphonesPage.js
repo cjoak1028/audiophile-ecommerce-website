@@ -7,7 +7,7 @@ import Product from '@components/Product/Product';
 const HeadphonesPage = () => {
     const { data } = useFetchLocalData('./data/products.json');
 
-    const headphonesProductList = data ? data[0].products.map(product => {
+    const headphonesList = data ? data[0].products.map(product => {
         return (
             <Product key={product.model} new={product.new} images={product.images} model={product.model} description={product.description} />
         )
@@ -15,7 +15,7 @@ const HeadphonesPage = () => {
 
     return (
         <CategoryPage category="headphones">
-            {headphonesProductList}
+            {headphonesList}
         </CategoryPage>
     );
 }

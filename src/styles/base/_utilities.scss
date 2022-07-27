@@ -37,6 +37,18 @@
             margin-bottom: 16.8rem;
         }
     }
+
+    &--category {
+        padding-top: 6.4rem !important;
+
+        @include respond-above('BP-2') {
+            padding-top: 12rem !important;
+        }
+
+        @include respond-above('BP-3') {
+            padding-top: 16rem !important;
+        }
+    }
 }
 
 .overlay {
