@@ -8,9 +8,9 @@ import {
 import NavBar from '@components/NavBar/NavBar';
 import Footer from '@components/Footer/Footer';
 import HomePage from '@pages/HomePage';
-import HeadphonesPage from '@pages/HeadphonesPage';
-import SpeakersPage from '@pages/SpeakersPage';
-import EarphonesPage from '@pages/EarphonesPage';
+import HeadphonesPage from '@pages/categories/HeadphonesPage';
+import SpeakersPage from '@pages/categories/SpeakersPage';
+import EarphonesPage from '@pages/categories/EarphonesPage';
 
 
 
