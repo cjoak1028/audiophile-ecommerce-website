@@ -8,14 +8,12 @@ import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
 import logo from '@assets/shared/desktop/logo.svg';
 
 export const HamburgerMenuContext = React.createContext(
-    { setOpenMenu: () => { } }
+    { toggleMenu: () => { } }
 );
 
 const NavBar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const isMounted = useRef(false);
-
-    const value = { openMenu, setOpenMenu };
 
     // Since useEffect hook will always run on mount, isMMounted is used to prevent body.classList from toggling
     // on initial render. Only after initial render will body.classList toggle whenever there is a change in openMenu's state
@@ -32,8 +30,10 @@ const NavBar = () => {
         setOpenMenu(prevOpenMenu => !prevOpenMenu);
     }
 
+    const value = { toggleMenu };
+
     const hamburgerMenu = (
-        <div className={'overlay'}>
+        <div className={'overlay'} >
             <div className={classes["hamburger-menu"]}>
                 <CategoryLinks />
             </div>

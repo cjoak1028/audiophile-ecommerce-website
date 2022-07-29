@@ -8,11 +8,11 @@ import arrowImg from '@assets/shared/desktop/icon-arrow-right.svg';
 import { HamburgerMenuContext } from '@components/NavBar/NavBar';
 
 const CategoryLinkCard = (props) => {
-    const { setOpenMenu } = useContext(HamburgerMenuContext);
+    const { toggleMenu } = useContext(HamburgerMenuContext);
 
-    const toggleMenu = () => {
-        setOpenMenu(prevOpenMenu => !prevOpenMenu);
-    }
+    // const toggleMenu = () => {
+    //     setOpenMenu(prevOpenMenu => !prevOpenMenu);
+    // }
 
     return (
         <div className={classes["category-card"]}>
