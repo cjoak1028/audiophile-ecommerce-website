@@ -5,14 +5,10 @@ import classes from './CategoryLinkCard.module.scss';
 
 import arrowImg from '@assets/shared/desktop/icon-arrow-right.svg';
 
-import { HamburgerMenuContext } from '@components/NavBar/NavBar';
+import { MenuContext } from '@components/NavBar/NavBar';
 
 const CategoryLinkCard = (props) => {
-    const { toggleMenu } = useContext(HamburgerMenuContext);
-
-    // const toggleMenu = () => {
-    //     setOpenMenu(prevOpenMenu => !prevOpenMenu);
-    // }
+    const toggleMenu = useContext(MenuContext);
 
     return (
         <div className={classes["category-card"]}>

@@ -7,8 +7,10 @@ import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
 
 import logo from '@assets/shared/desktop/logo.svg';
 
-export const HamburgerMenuContext = React.createContext(
-    { toggleMenu: () => { } }
+export const MenuContext = React.createContext(
+    {
+        toggleMenu: () => { }
+    }
 );
 
 const NavBar = () => {
@@ -30,8 +32,6 @@ const NavBar = () => {
         setOpenMenu(prevOpenMenu => !prevOpenMenu);
     }
 
-    const value = { toggleMenu };
-
     const hamburgerMenu = (
         <div className={'overlay'} >
             <div className={classes["hamburger-menu"]}>
@@ -41,7 +41,7 @@ const NavBar = () => {
     )
 
     return (
-        <HamburgerMenuContext.Provider value={value}>
+        <MenuContext.Provider value={toggleMenu}>
             <div className={classes.navbar}>
                 <div className={`padding-x ${classes["navbar__content"]}`}>
                     <div className={classes["navbar__hamburger-btn"]} onClick={() => toggleMenu()}>
@@ -65,7 +65,7 @@ const NavBar = () => {
                 </div>
             </div>
             {openMenu ? hamburgerMenu : ''}
-        </HamburgerMenuContext.Provider>
+        </MenuContext.Provider>
     );
 }
 
