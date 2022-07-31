@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import classes from './Product.module.scss';
 
@@ -6,6 +7,8 @@ import * as categoryImages from '@assets/categoryImages.js';
 
 const Product = (props) => {
     let imgMobile, imgTablet, imgDesktop;
+
+    console.log(props.link);
 
     if (props.model === "xx99 mark ii headphones") {
         imgMobile = categoryImages.xx99MarkTwoImgMobile;
@@ -44,7 +47,7 @@ const Product = (props) => {
                 {props.new ? <h6 className={classes['product__new']}>New Product</h6> : ''}
                 <h2 className={classes['product__model']}>{props.model}</h2>
                 <p className={classes['product__description']}>{props.description}</p>
-                <a className={'btn btn--orange'}>See Product</a>
+                <Link to={props.link} className={'btn btn--orange'}>See Product</Link>
             </div>
         </div>
     );

@@ -11,6 +11,7 @@ import HomePage from '@pages/HomePage';
 import HeadphonesPage from '@pages/categories/HeadphonesPage';
 import SpeakersPage from '@pages/categories/SpeakersPage';
 import EarphonesPage from '@pages/categories/EarphonesPage';
+import XX99MarkIIPage from '@pages/products/headphones/XX99MarkIIPage';
 
 
 
@@ -23,6 +24,9 @@ const App = () => {
         <Route path="/headphones" element={<HeadphonesPage />} />
         <Route path="/speakers" element={<SpeakersPage />} />
         <Route path="/earphones" element={<EarphonesPage />} />
+
+        <Route path="/headphones/xx99-mark-ii-headphones" element={<XX99MarkIIPage />} />
+
       </Routes>
       <Footer />
     </Router>

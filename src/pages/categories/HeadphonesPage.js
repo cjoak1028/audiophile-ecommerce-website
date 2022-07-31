@@ -9,7 +9,7 @@ const HeadphonesPage = () => {
 
     const headphonesList = data ? data[0].products.map(product => {
         return (
-            <Product key={product.model} new={product.new} images={product.images} model={product.model} description={product.description} />
+            <Product key={product.model} new={product.new} images={product.images} model={product.model} description={product.description} link={`/headphones/${product.model.replace(/\s/g, '-')}`} />
         )
     }) : '';
 
