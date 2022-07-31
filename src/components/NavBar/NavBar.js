@@ -7,11 +7,7 @@ import CategoryLinks from '@components/CategoryLinks/CategoryLinks';
 
 import logo from '@assets/shared/desktop/logo.svg';
 
-export const MenuContext = React.createContext(
-    {
-        toggleMenu: () => { }
-    }
-);
+export const MenuContext = React.createContext({ toggleMenu: () => { } });
 
 const NavBar = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -33,7 +29,7 @@ const NavBar = () => {
     }
 
     const hamburgerMenu = (
-        <div className={'overlay'} >
+        <div className={'overlay'}>
             <div className={classes["hamburger-menu"]}>
                 <CategoryLinks />
             </div>
